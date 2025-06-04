@@ -1,0 +1,49 @@
+Libraries Used and Their Purpose
+
+Transformers (Hugging Face):-
+Description: A library providing pre-trained machine learning models for natural language processing (NLP) tasks, such as text summarization.
+Purpose: Used to load the t5-small model for abstractive text summarization, enabling the app to generate concise summaries from long articles efficiently.
+Installation:      "pip install transformers"
+
+
+NLTK (Natural Language Toolkit):-
+Description: A Python library for natural language processing, offering tools for text processing and analysis.
+Purpose: Utilized for sentence tokenization (sent_tokenize) to split text into sentences, ensuring proper text handling before summarization.
+Installation:            "pip install nltk"
+
+
+Streamlit:-
+Description: A Python framework for building interactive web applications with minimal code.
+Purpose: Used to create a user-friendly web interface where users can input articles, trigger summarization, and view results.
+Installation:        "pip install streamlit"
+
+
+Pyngrok:-
+Description: A Python wrapper for ngrok, a tool that creates secure public URLs for local web servers.
+Purpose: Employed to expose the Streamlit app (running locally on port 8501) to a public URL, making it accessible online for testing or sharing.
+Installation:      "pip install pyngrok"
+
+
+Subprocess:-
+Description: A standard Python library for running external system commands and processes.
+Purpose: Used to launch the Streamlit app as a subprocess, allowing the app to run programmatically while ngrok creates a public URL.
+Installation:
+No installation required, as subprocess is included in Python’s standard library.
+
+
+Why These Libraries Were Chosen:-
+Transformers: Provides access to state-of-the-art NLP models like T5, ideal for generating high-quality summaries with minimal setup.
+NLTK: Offers robust text processing tools, ensuring the input article is properly formatted for summarization.
+Streamlit: Simplifies web app development, enabling a quick and intuitive interface for users to interact with the summarizer.
+Pyngrok: Facilitates easy sharing of the local app by creating a public URL, useful for testing or demo purposes.
+Subprocess: Enables seamless integration of the Streamlit server with ngrok, ensuring the app runs smoothly in a local-to-public setup.
+Installation Steps
+To set up the environment for the Text Summarizer App, run the following commands in your terminal or command prompt:-
+
+pip install transformers
+pip install nltk
+pip install streamlit
+pip install pyngrok
+Note: Ensure you have Python installed (version 3.7 or higher recommended). After installing NLTK, the app downloads required NLTK data (punkt) automatically via nltk.download('punkt'). No additional installation is needed for subprocess, as it is part of Python’s standard library.
+
+These libraries and installation steps enable the creation, deployment, and accessibility of a functional text summarization web app.
