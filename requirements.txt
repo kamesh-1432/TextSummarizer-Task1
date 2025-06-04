@@ -44,6 +44,7 @@ pip install transformers
 pip install nltk
 pip install streamlit
 pip install pyngrok
-Note: Ensure you have Python installed (version 3.7 or higher recommended). After installing NLTK, the app downloads required NLTK data (punkt) automatically via nltk.download('punkt'). No additional installation is needed for subprocess, as it is part of Python’s standard library.
+Note: Ensure you have Python installed (version 3.7 or higher recommended). After installing NLTK, the app downloads required NLTK data (punkt) automatically via nltk.download('punkt'). 
+No additional installation is needed for subprocess, as it is part of Python’s standard library.
 
 These libraries and installation steps enable the creation, deployment, and accessibility of a functional text summarization web app.
